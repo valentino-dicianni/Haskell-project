@@ -16,7 +16,6 @@ main :: IO ()
 main  = do  putStrLn "Which file.txt do you want to load: "
             file <- getLine
             csvFile <- readFile file
-            csvFile <- readFile "graph.txt"
             let graph =  start csvFile
             putStrLn "--->Graph created<---"
             putStrLn "*Number of Nodes: "
